@@ -1,0 +1,107 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.background-design {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(135deg, #6b46c1 0%, #805ad5 100%);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%);
+    z-index: -1;
+}
+.background-design::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, transparent 75%, transparent);
+    background-size: 20px 20px;
+    opacity: 0.3;
+}
+.zigzag {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(
+        135deg,
+        rgba(211, 211, 211, 0.5) 0%,
+        rgba(211, 211, 211, 0.5) 0.625%,
+        transparent 0.625%,
+        transparent 1.25%
+    );
+    opacity: 0.3;
+    z-index: 0;
+}
+.menu-box {
+    visibility: hidden;
+    position: absolute;
+    top: 3rem;
+    right: 1rem;
+    background: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    z-index: 9999 !important;
+}
+
+
+.menu-box a {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: #333;
+}
+.menu-box a:hover {
+    background: #f0f0f0;
+}
+.menu-box a:active {
+    background: #e0e0e0;
+}
+.menu-box img {
+    margin-right: 0.5rem;
+}
+.menu-box1 {
+    visibility: hidden;
+    position: absolute;
+    top: 3rem;
+    right: 1rem;
+    background: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    z-index: 9999 !important;
+}
+.menu-box2 {
+    visibility: hidden;
+    position: absolute;
+    top: 3rem;
+    right: 1rem;
+    background: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    z-index: 9999 !important;
+}
+footer {
+position: relative;
+bottom: 0;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 1rem;
+}
